@@ -1,7 +1,7 @@
 function CommunityPage() {
     return (
         <div>
-            Community
+            Community Page
         </div>
     )
 }

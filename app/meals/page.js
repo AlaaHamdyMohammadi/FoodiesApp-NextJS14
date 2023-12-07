@@ -1,4 +1,4 @@
-function Homepage() {
+function MealsPage() {
     return (
       <main>
         HomePage
@@ -6,4 +6,4 @@ function Homepage() {
     );
 }
 
-export default Homepage
+export default MealsPage

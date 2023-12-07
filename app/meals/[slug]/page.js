@@ -1,9 +1,5 @@
-function page() {
-    return (
-        <div>
-            
-        </div>
-    )
+function MailDetailsPage() {
+    return <div>MailDetailsPage</div>;
 }
 
-export default page
+export default MailDetailsPage
