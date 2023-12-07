@@ -1,14 +1,18 @@
-import Link from "next/link"
+import Link from "next/link";
 import Image from "next/image";
 
-import logoImg from '@/assets/logo.png';
-import classes from './MainHeader.module.css';
+import logoImg from "@/assets/logo.png";
+import classes from "./MainHeader.module.css";
+import MainHeaderBackground from "./MainHeaderBackground";
 
 function MainHeader() {
-    return (
+  return (
+    <>
+      <MainHeaderBackground />
+
       <header className={classes.header}>
         <Link className={classes.logo} href="/">
-          <Image src={logoImg} alt="logo" width={200} height={200} priority/>
+          <Image src={logoImg} alt="logo" width={200} height={200} priority />
           NextLevel Food
         </Link>
         <nav className={classes.nav}>
@@ -22,7 +26,8 @@ function MainHeader() {
           </ul>
         </nav>
       </header>
-    );
+    </>
+  );
 }
 
-export default MainHeader
+export default MainHeader;
