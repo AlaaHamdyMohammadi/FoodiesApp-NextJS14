@@ -1,10 +1,15 @@
 import Image from 'next/image';
 import classes from './page.module.css';
 import { getMeal } from '@/lib/meals';
+import { notFound } from 'next/navigation';
 
 function MailDetailsPage({params}) {
     const meal = getMeal(params.slug);
 
+    if(!meal){
+        //This function stop the component execution
+        notFound();
+    }
     meal.instructions = meal.instructions.replace(/\n/g, "<br/>");
     return (
       <>
