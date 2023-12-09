@@ -7,6 +7,11 @@ import classes from "./page.module.css";
 import { shareMeal } from "@/lib/actions";
 import MealsFormSubmit from "@/components/meals/MealsFormSubmit";
 
+export const metadata = {
+  title: "Share Page",
+  description: "Delicious meals, shared by a food-loving community.",
+};
+
 function ShareMealsPage() {
     const [state, formAction] = useFormState(shareMeal, {message: null}); //Responsible for managing the state of this page
   return (

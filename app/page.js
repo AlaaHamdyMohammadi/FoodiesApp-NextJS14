@@ -1,7 +1,11 @@
 import Link from "next/link";
 import classes from "./page.module.css";
 import ImageSlideshow from "@/components/images/ImageSlideshow";
-
+ 
+export const metadata = {
+  title: "Home",
+  description: "Delicious meals, shared by a food-loving community.",
+};
 export default function Home() {
   return (
     <>
